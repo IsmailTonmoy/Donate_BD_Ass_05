@@ -29,12 +29,13 @@
 
     </header>
     <main>
-        <section class="max-w-6xl mx-auto py-20 space-y-6 ">
-            <div class="text-center space-x-4">
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+        <div class="text-center space-x-4 py-4">
+            <button id="show-card-container" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+            <button id="show-T-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
 
-            </div>
+        </div>
+        <section id="card-container" class="max-w-6xl mx-auto py-6 space-y-6">
+            
 
             <div>
                 <div class="card lg:card-side bg-base-100 shadow-xl">
@@ -67,7 +68,7 @@
                         alt="Album" />
                     </figure>
                     <div class="card-body w-1/2">
-                        <div class="badge badge-lg h-10"><img src="assets/coin.png" alt="">00.00 BDT</div>
+                        <div id="n-donatef" class="badge badge-lg h-10"><img src="assets/coin.png" alt="">00.00 BDT</div>
                       <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                       <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. 
                         Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, 
@@ -76,8 +77,8 @@
                         Every contribution counts towards making a real difference. 
                         Please consider donating today to assist those in urgent need.</p>
                       <div class="card-actions justify-end">
-                        <input type="number" placeholder="Write Donation Amount " class="input input-bordered w-full" />
-                        <button class="btn btn-block bg-[#B4F461]">Donate</button>
+                        <input id="donate-amountf" type="number" placeholder="Write Donation Amount " class="input input-bordered w-full" />
+                        <button id="donatef" class="btn btn-block bg-[#B4F461]">Donate</button>
                       </div>
                     </div>
                   </div>
@@ -90,7 +91,7 @@
                         alt="Album" />
                     </figure>
                     <div class="card-body w-1/2">
-                        <div class="badge badge-lg h-10"><img src="assets/coin.png" alt="">00.00 BDT</div>
+                        <div id="n-donate-q" class="badge badge-lg h-10"><img src="assets/coin.png" alt="">00.00 BDT</div>
                       <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                       <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. 
                         Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected.
@@ -98,18 +99,23 @@
                         Every donation plays a vital role in alleviating their suffering and aiding in their recovery. 
                         Please consider making a donation to support these brave individuals in their time of need.</p>
                       <div class="card-actions justify-end">
-                        <input type="number" placeholder="Write Donation Amount " class="input input-bordered w-full" />
-                        <button class="btn btn-block bg-[#B4F461]">Donate</button>
+                        <input id="donate-amount-q" type="number" placeholder="Write Donation Amount " class="input input-bordered w-full" />
+                        <button id="donate-q" class="btn btn-block bg-[#B4F461]">Donate</button>
                       </div>
                     </div>
                   </div>
             </div>
 
-
-            
-
-
         </section>
+
+        <!-- history -->
+
+        <div id="histry"  class="hidden">
+            <div> <h1></h1></div>
+
+        </div>
+
+
 
     </main>
     <script src="js/utilities.js"></script>
