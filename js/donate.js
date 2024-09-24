@@ -5,47 +5,30 @@ document.getElementById('donate')
     event.preventDefault();
 
     const addDonateM = getValueById('donate-amount');
+    if(isNaN(addDonateM)|| addDonateM <= 0){
+        alert('Failed to add money');
+        return;
+    }
+
+    
+
     const nDonate = getTextValueById('n-donate');
 
     const noaDonate = addDonateM + nDonate;
 
-    document.getElementById('n-donate').innerText = noaDonate;
-
+    document.getElementById('n-donate').innerText = noaDonate + 'BDT';
+        
     const donationT = getTextValueById('total-donation');
     const totalDonation = addDonateM + donationT;
-    document.getElementById('total-donation').innerText = totalDonation;
-
+    document.getElementById('total-donation').innerText = totalDonation + 'BDT';
     
-
-
-
-
-    // const addMoney = document.getElementById('donate-amount').value;
-    // const addMoneyNumber = parseFloat(addMoney);
-    // const nDonate = document.getElementById('n-donate').innerText;
-    // const nDonateN = parseFloat(nDonate);
-    // const noaDonate = addMoneyNumber + nDonateN
-
-    // document.getElementById('n-donate').innerText = noaDonate;
-
-    // const tDonation = document.getElementById('total-donation').innerText;
-    // const ntDonation = parseFloat(tDonation);
-
-    // const totalDo = addMoneyNumber + ntDonation;
-
-    // document.getElementById('total-donation').innerText = totalDo;
 
     
 //add history
 const p = document.createElement('p');
 p.innerText = `${noaDonate} Taka is Donate For Flood at Noakhali.New Balance for Flood:${noaDonate}   Total Balance: ${totalDonation}`; 
 
-// should be a common function
-document.getElementById('histry').appendChild(p);
-
-
-
-    
+// should be a common functiondocument.getElementById('histry').appendChild(p);  
 })
 
 
@@ -56,6 +39,11 @@ document.getElementById('donatef')
     event.preventDefault();
 
     const addDonateM = getValueById('donate-amountf');
+    if(isNaN(addDonateM)|| addDonateM <= 0){
+        alert('Failed to add money');
+        return;
+    }
+    
     const nDonate = getTextValueById('n-donatef');
 
     const noaDonate = addDonateM + nDonate;
@@ -85,14 +73,13 @@ document.getElementById('donate-q')
     event.preventDefault();
 
     const addDonateM = getValueById('donate-amount-q');
+    if(isNaN(addDonateM)|| addDonateM <= 0){
+        alert('Failed to add money');
+        return;
+    }
     const nDonate = getTextValueById('n-donate-q');
 
     const noaDonate = addDonateM + nDonate;
-
-   if(addDonateM !== Number){
-    alert('Please enter the amount in Number');
-    return;
-   }
 
     document.getElementById('n-donate-q').innerText = noaDonate;
 
@@ -121,3 +108,6 @@ document.getElementById("blog-page").addEventListener("click", function() {
     window.location.href = "http://127.0.0.1:5501/blog.html"; 
 
 });
+
+
+
