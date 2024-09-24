@@ -9,7 +9,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="sticky top-0 z-50">
+    <header class=" sticky top-0 z-50 lg:sticky lg:top-0 lg:z-50">
         <!-- NavBar -->
         
         <div class="navbar bg-base-100 bg-[#F9F7F3] flex col-span-1 justify-between">
@@ -17,7 +17,7 @@
                 <button id="blog-page" class="btn bg-[#B4F461] font-extrabold lg:text-lg sm:text-sm">Blog</button>
            
             <div >
-                <img class="w-10" src="assets/logo.png" alt="">
+                <img class="w-5 lg:w-10 rounded-full lg:rounded-none" src="assets/logo.png" alt="">
             <a class="btn btn-ghost lg:text-xl font-bold sm:text-lg">Donate Bangladesh</a>
             </div>
             <div>
@@ -51,7 +51,7 @@
                     </figure>
                     <div class="card-body w-full lg:w-1/2">
 
-                      <div  class="badge badge-lg w-32 h-10 "><img src="assets/coin.png" alt=""><span id="n-donate">00</span>BDT</div>
+                      <div  class="badge badge-lg w-32 h-10 font-semibold space-x-2"><img src="assets/coin.png" alt=""><span id="n-donate">00</span><span>BDT</span></div>
 
                       <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                       <p>The recent floods in Noakhali have caused significant damage to homes  infrastructure. 
@@ -65,7 +65,7 @@
                         <button id="donate" class="btn btn-block bg-[#B4F461]">Donate</button> 
                         <dialog id="my_modal_1" class="modal">
                           <div class="modal-box">
-                            <h3 class=" font-bold text-center text-4xl">Congrates!</h3>
+                            <h3 class=" font-bold text-center text-4xl pb-3">Congrates!</h3>
                             <img class="mx-auto size-10 " src="assets/coin.png" alt="">
                             <p class="py-4 text-center font-bold text-2xl">You Have Donated For HumanKind</p>
                             <h1 class="text-center font-bold text-3xl">Successfully</h1>
@@ -89,7 +89,9 @@
                         alt="Album" />
                     </figure>
                     <div class="card-body w-full lg:w-1/2">
-                        <div id="n-donatef" class="badge badge-lg h-10 "><img src="assets/coin.png" alt="">00.00 BDT</div>
+                      <div  class="badge badge-lg w-32 h-10 font-semibold space-x-2"><img src="assets/coin.png" alt=""><span id="n-donatef">00</span><span>BDT</span></div>
+
+                      
                       <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                       <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. 
                         Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, 
@@ -103,7 +105,7 @@
                         <button id="donatef" class="btn btn-block bg-[#B4F461]">Donate</button>
                         <dialog id="my_modal_2" class="modal">
                           <div class="modal-box">
-                            <h3 class=" font-bold text-center text-4xl">Congrates!</h3>
+                            <h3 class=" font-bold text-center text-4xl pb-3">Congrates!</h3>
                             <img class="mx-auto size-10 " src="assets/coin.png" alt="">
                             <p class="py-4 text-center font-bold text-2xl">You Have Donated For HumanKind</p>
                             <h1 class="text-center font-bold text-3xl">Successfully</h1>
@@ -128,7 +130,8 @@
                         alt="Album" />
                     </figure>
                     <div class="card-body w-full lg:w-1/2">
-                        <div id="n-donate-q" class="badge badge-lg h-10"><img src="assets/coin.png" alt="">00.00 BDT</div>
+                      <div  class="badge badge-lg w-32 h-10 font-semibold space-x-2"><img src="assets/coin.png" alt=""><span id="n-donate-q">00</span><span>BDT</span></div>
+                      
                       <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                       <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. 
                         Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected.
@@ -140,8 +143,8 @@
                         <button id="donate-q" class="btn btn-block bg-[#B4F461]">Donate</button>
                         <dialog id="my_modal_3" class="modal">
                           <div class="modal-box">
-                            <h3 class=" font-bold text-center text-4xl">Congrates!</h3>
-                            <img class="mx-auto size-10 " src="assets/coin.png" alt="">
+                            <h3 class=" font-bold text-center text-4xl pb-3">Congrates!</h3>
+                            <img class="mx-auto size-10" src="assets/coin.png" alt="">
                             <p class="py-4 text-center font-bold text-2xl">You Have Donated For HumanKind</p>
                             <h1 class="text-center font-bold text-3xl">Successfully</h1>
                             <div class="modal-action">
@@ -161,7 +164,7 @@
 
         <!-- history -->
 
-        <div id="histry"  class="hidden py-10 ">
+        <div id="histry"  class="hidden  pt-6 lg:pb-96 pb-96 ">
 
           <div id="contain" class=" max-w-6xl mx-auto text-center space-y-6">
 
@@ -177,8 +180,15 @@
 
 
     </main>
-    <footer class="max-w-full h-60 bg-[#F9F7F3]">
-      <div>
+    <footer class="max-w-full lg:h-52 h-96 bg-[#F9F7F3] text-center ">
+
+      <h1 class="font-bold text-2xl pt-28 lg:pt-10">Thank You For Your Time And Donation.</h1>
+      <div class="inline-flex pt-2">
+
+        
+
+            <img class="w-11 " src="assets/logo.png" alt="">
+            <a class="btn btn-ghost  font-bold text-3xl">Donate Bangladesh</a>
 
       </div>
     </footer>

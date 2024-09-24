@@ -9,7 +9,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
  </head>
  <body>
-    <header>
+    <header class="sticky top-0 z-50">
         <div class="navbar bg-base-100 bg-[#F9F7F3] flex col-span-1 justify-between">
             
             <button id="return-home" class="btn bg-[#B4F461] font-extrabold lg:text-lg sm:text-sm">Home</button>
@@ -20,7 +20,7 @@
         </div>
         <div>
             <img  src="assets/coin.png" alt="">
-        <div id="total-donation" class="badge badge-lg bg-[#F9F7F3] lg:text-lg font-bold sm:text-sm"> 00.00 BDT</div>
+        <div id="total-donation" class="badge badge-lg bg-[#F9F7F3] lg:text-lg font-bold sm:text-sm"> 10000 BDT</div>
         </div>
       </div>
 
@@ -30,7 +30,7 @@
         <div class="pt-6">
             <h1 class="font-extrabold text-4xl text-center py-10 bg-orange-200 max-w-2xl mx-auto rounded-xl">Important FAQ</h1>
         </div>
-        <section class="text-center pt-10 space-y-6">
+        <section class="text-center pt-10 space-y-6 pb-8">
 
 
             <!-- Open the modal using ID.showModal() method -->
@@ -86,7 +86,7 @@
   </div>
 </dialog>
 
-<button class="btn w-full max-w-6xl h-24 mx-auto text-xl" onclick="my_modal_4.showModal()"> How does the DOM handle dynamic 
+<button class="btn w-full max-w-6xl h-28 mx-auto text-xl" onclick="my_modal_4.showModal()"> How does the DOM handle dynamic 
     changes in a webpage,
      and what is the role of reflow and repaint in DOM manipulation?</button>
 <dialog id="my_modal_4" class="modal">
@@ -109,6 +109,13 @@
         </section>
 
     </main>
+    <footer class="max-w-full h-52  bg-[#F9F7F3]">
+        <div>
+
+            <h1 class="text-center font-extrabold text-3xl lg:text-5xl pt-14"> Thank You.</h1>
+  
+        </div>
+      </footer>
     <script src="js/blog.js"></script>
     
  </body>

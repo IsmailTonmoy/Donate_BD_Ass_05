@@ -3,11 +3,11 @@
 document.getElementById('donate')
 .addEventListener('click', function (event){
     event.preventDefault();
-
-    const addDonateM = getValueById('donate-amount');
     const donationT = getTextValueById('total-donation');
+    const addDonateM = getValueById('donate-amount');
+
     if(isNaN(addDonateM)|| addDonateM <= 0 || addDonateM > donationT ){
-        alert('Failed to add money');
+        alert('Failed to add money! Please add correct amount.');
         return;
     }
 
@@ -21,7 +21,7 @@ document.getElementById('donate')
         
     
     const totalDonation = donationT - addDonateM;
-    document.getElementById('total-donation').innerText = totalDonation;
+    document.getElementById('total-donation').innerText = totalDonation + ' BDT';
     my_modal_1.showModal();
 
    
@@ -31,7 +31,7 @@ document.getElementById('donate')
 //add history
 const dateT = getTime();
 const p = document.createElement('p');
-p.classList.add('shadow-xl','bg-green-300','h-20','font-bold','py-2');
+p.classList.add('shadow-xl','bg-green-300','max-h-full','font-bold','py-2');
 p.innerText = `${noaDonate} Taka is Donate For Flood at Noakhali. New Balance for Flood:${noaDonate},Total Balance: ${totalDonation} 
 Time: ${dateT}`; 
  
@@ -46,10 +46,10 @@ document.getElementById('contain').appendChild(p);
 document.getElementById('donatef')
 .addEventListener('click', function (event){
     event.preventDefault();
-
+    const donationT = getTextValueById('total-donation');
     const addDonateM = getValueById('donate-amountf');
-    if(isNaN(addDonateM)|| addDonateM <= 0){
-        alert('Failed to add money');
+    if(isNaN(addDonateM)|| addDonateM <= 0 || addDonateM > donationT){
+        alert('Failed to add money! Please add correct amount.');
         return;
     } 
     
@@ -62,16 +62,16 @@ document.getElementById('donatef')
 
     document.getElementById('n-donatef').innerText = noaDonate;
 
-    const donationT = getTextValueById('total-donation');
+    
     const totalDonation = donationT - addDonateM;
-    document.getElementById('total-donation').innerText = totalDonation;
+    document.getElementById('total-donation').innerText = totalDonation + ' BDT';
     my_modal_2.showModal();
 
     
 //add history
 const dateT = getTime();
 const p = document.createElement('p');
-p.classList.add('shadow-xl','bg-green-300','h-20','font-bold','py-2');
+p.classList.add('shadow-xl','bg-green-300','max-h-full','font-bold','py-2');
 p.innerText = `${noaDonate} Taka is Donate For Flood Relief In Feni.New Balance for Flood Relief:${noaDonate},Total Balance: ${totalDonation}
 Time: ${dateT}`; 
 
@@ -87,10 +87,10 @@ document.getElementById('contain').appendChild(p);
 document.getElementById('donate-q')
 .addEventListener('click', function (event){
     event.preventDefault();
-
+    const donationT = getTextValueById('total-donation');
     const addDonateM = getValueById('donate-amount-q');
-    if(isNaN(addDonateM)|| addDonateM <= 0){
-        alert('Failed to add money');
+    if(isNaN(addDonateM)|| addDonateM <= 0 || addDonateM > donationT){
+        alert('Failed to add money! Please add correct amount.');
         return;
     }
     const nDonate = getTextValueById('n-donate-q');
@@ -102,9 +102,9 @@ document.getElementById('donate-q')
 
     
 
-    const donationT = getTextValueById('total-donation');
+    
     const totalDonation = donationT - addDonateM;
-    document.getElementById('total-donation').innerText = totalDonation;
+    document.getElementById('total-donation').innerText = totalDonation + ' BDT';
     my_modal_3.showModal();
 
 
@@ -113,7 +113,7 @@ document.getElementById('donate-q')
 //add history
 const dateT = getTime();
 const p = document.createElement('p');
-p.classList.add('shadow-xl','bg-green-300','h-20','font-bold','py-2');
+p.classList.add('shadow-xl','bg-green-300','max-h-full','font-bold','py-2');
 p.innerText = `${noaDonate} Taka is Donate For Injured People in the Quota Movement.New Balance for Injured People:${noaDonate},Total Balance: ${totalDonation}
 Time: ${dateT}`; 
 
