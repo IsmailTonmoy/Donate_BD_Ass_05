@@ -16,11 +16,12 @@ document.getElementById('donate')
 
     const noaDonate = addDonateM + nDonate;
 
-    document.getElementById('n-donate').innerText = noaDonate + 'BDT';
+    document.getElementById('n-donate').innerText = noaDonate ;
         
     const donationT = getTextValueById('total-donation');
     const totalDonation = addDonateM + donationT;
-    document.getElementById('total-donation').innerText = totalDonation + 'BDT';
+    document.getElementById('total-donation').innerText = totalDonation;
+    my_modal_1.showModal();
     
 
     
