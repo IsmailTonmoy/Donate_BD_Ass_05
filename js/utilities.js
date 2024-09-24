@@ -19,14 +19,11 @@ function showSectionById(id){
     document.getElementById('histry').classList.add('hidden');
     
     
-    document.getElementById(id).classList.remove('hidden');
-
-    document.getElementById.classList.add('active');
-    
-
-    ;
+    document.getElementById(id).classList.remove('hidden');  
 
 }
+
+
 
 
 

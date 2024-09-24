@@ -33,7 +33,7 @@
     </header>
     <main>
         <div class="text-center space-x-4 py-4">
-            <button id="show-card-container" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg active:bg-[#B4F461] ">Donation</button>
+            <button id="show-card-container" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  ">Donation</button>
             <button id="show-T-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
 
         </div>
@@ -102,9 +102,23 @@
                          By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. 
                         Every donation plays a vital role in alleviating their suffering and aiding in their recovery. 
                         Please consider making a donation to support these brave individuals in their time of need.</p>
-                      <div class="card-actions justify-end">
+                      <div class="card-actions ">
                         <input id="donate-amount-q" type="number" placeholder="Write Donation Amount " class="input input-bordered w-full" />
-                        <button id="donate-q" class="btn btn-block bg-[#B4F461]">Donate</button>
+                        <button id="donate-q" class="btn btn-block bg-[#B4F461]" onclick="my_modal_1.showModal()">Donate</button>
+                        <dialog id="my_modal_1" class="modal">
+                          <div class="modal-box">
+                            <h3 class=" font-bold text-center text-4xl">Congrates!</h3>
+                            <img class="mx-auto size-10 " src="assets/coin.png" alt="">
+                            <p class="py-4 text-center font-bold text-2xl">You Have Donated For HumanKind</p>
+                            <h1 class="text-center font-bold text-3xl">Successfully</h1>
+                            <div class="modal-action">
+                              <form method="dialog" class="mx-auto">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn bg-[#B4F461]">Close Confirmation</button>
+                              </form>
+                            </div>
+                          </div>
+                        </dialog>
                       </div>
                     </div>
                   </div>
@@ -123,19 +137,6 @@
         </div>
 
 
-        <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
 
 
 
