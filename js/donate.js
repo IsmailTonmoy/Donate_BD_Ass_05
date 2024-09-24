@@ -35,6 +35,15 @@ document.getElementById('donate')
 
     // document.getElementById('total-donation').innerText = totalDo;
 
+    
+//add history
+const p = document.createElement('p');
+p.innerText = `${noaDonate} Taka is Donate For Flood at Noakhali.New Balance for Flood:${noaDonate}   Total Balance: ${totalDonation}`; 
+
+// should be a common function
+document.getElementById('histry').appendChild(p);
+
+
 
     
 })
@@ -57,6 +66,15 @@ document.getElementById('donatef')
     const totalDonation = addDonateM + donationT;
     document.getElementById('total-donation').innerText = totalDonation;
 
+    
+//add history
+const p = document.createElement('p');
+p.innerText = `${noaDonate} Taka is Donate For Flood Relief In Feni.New Balance for Flood Relief:${noaDonate}  Total Balance: ${totalDonation}`; 
+
+// should be a common function
+document.getElementById('histry').appendChild(p);
+
+
 })
 
 
@@ -71,12 +89,35 @@ document.getElementById('donate-q')
 
     const noaDonate = addDonateM + nDonate;
 
+   if(addDonateM !== Number){
+    alert('Please enter the amount in Number');
+    return;
+   }
+
     document.getElementById('n-donate-q').innerText = noaDonate;
+
+    
 
     const donationT = getTextValueById('total-donation');
     const totalDonation = addDonateM + donationT;
     document.getElementById('total-donation').innerText = totalDonation;
 
-})
+
 
     
+//add history
+const p = document.createElement('p');
+p.innerText = `${noaDonate} Taka is Donate For Injured People in the Quota Movement.New Balance for Injured People:${noaDonate}   Total Balance: ${totalDonation}`; 
+
+// should be a common function
+document.getElementById('histry').appendChild(p);
+
+
+})
+
+//blog link
+
+document.getElementById("blog-page").addEventListener("click", function() {
+    window.location.href = "http://127.0.0.1:5501/blog.html"; 
+
+});
