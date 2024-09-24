@@ -23,7 +23,22 @@ function showSectionById(id){
 
 }
 
+function getTime(){
+    const currentTime = new Date ();
+    const formatedTime = `${currentTime} `
+    return formatedTime
+}
 
+const header = document.querySelector('header');
 
+  function toggleBlurOnScroll() {
+    if (window.scrollY > 0) {
+      header.classList.add('backdrop-blur-md', 'bg-opacity-60');
+    } else {
+      header.classList.remove('backdrop-blur-md', 'bg-opacity-60');
+    }
+  }
+
+  window.addEventListener('scroll', toggleBlurOnScroll);
 
 

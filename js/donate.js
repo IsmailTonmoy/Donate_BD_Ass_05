@@ -5,7 +5,8 @@ document.getElementById('donate')
     event.preventDefault();
 
     const addDonateM = getValueById('donate-amount');
-    if(isNaN(addDonateM)|| addDonateM <= 0){
+    const donationT = getTextValueById('total-donation');
+    if(isNaN(addDonateM)|| addDonateM <= 0 || addDonateM > donationT ){
         alert('Failed to add money');
         return;
     }
@@ -18,17 +19,21 @@ document.getElementById('donate')
 
     document.getElementById('n-donate').innerText = noaDonate ;
         
-    const donationT = getTextValueById('total-donation');
-    const totalDonation = addDonateM + donationT;
+    
+    const totalDonation = donationT - addDonateM;
     document.getElementById('total-donation').innerText = totalDonation;
     my_modal_1.showModal();
+
+   
     
 
     
 //add history
+const dateT = getTime();
 const p = document.createElement('p');
-p.classList.add('shadow-xl','bg-green-300','h-10','font-bold','py-2');
-p.innerText = `${noaDonate} Taka is Donate For Flood at Noakhali. New Balance for Flood:${noaDonate}   Total Balance: ${totalDonation}`; 
+p.classList.add('shadow-xl','bg-green-300','h-20','font-bold','py-2');
+p.innerText = `${noaDonate} Taka is Donate For Flood at Noakhali. New Balance for Flood:${noaDonate},Total Balance: ${totalDonation} 
+Time: ${dateT}`; 
  
  
 
@@ -58,14 +63,17 @@ document.getElementById('donatef')
     document.getElementById('n-donatef').innerText = noaDonate;
 
     const donationT = getTextValueById('total-donation');
-    const totalDonation = addDonateM + donationT;
+    const totalDonation = donationT - addDonateM;
     document.getElementById('total-donation').innerText = totalDonation;
+    my_modal_2.showModal();
 
     
 //add history
+const dateT = getTime();
 const p = document.createElement('p');
-p.classList.add('shadow-xl','bg-green-300','h-10','font-bold','py-2');
-p.innerText = `${noaDonate} Taka is Donate For Flood Relief In Feni.New Balance for Flood Relief:${noaDonate}  Total Balance: ${totalDonation}`; 
+p.classList.add('shadow-xl','bg-green-300','h-20','font-bold','py-2');
+p.innerText = `${noaDonate} Taka is Donate For Flood Relief In Feni.New Balance for Flood Relief:${noaDonate},Total Balance: ${totalDonation}
+Time: ${dateT}`; 
 
 
 document.getElementById('contain').appendChild(p);
@@ -95,16 +103,19 @@ document.getElementById('donate-q')
     
 
     const donationT = getTextValueById('total-donation');
-    const totalDonation = addDonateM + donationT;
+    const totalDonation = donationT - addDonateM;
     document.getElementById('total-donation').innerText = totalDonation;
+    my_modal_3.showModal();
 
 
 
     
 //add history
+const dateT = getTime();
 const p = document.createElement('p');
-p.classList.add('shadow-xl','bg-green-300','h-10','font-bold','py-2');
-p.innerText = `${noaDonate} Taka is Donate For Injured People in the Quota Movement.New Balance for Injured People:${noaDonate}   Total Balance: ${totalDonation}`; 
+p.classList.add('shadow-xl','bg-green-300','h-20','font-bold','py-2');
+p.innerText = `${noaDonate} Taka is Donate For Injured People in the Quota Movement.New Balance for Injured People:${noaDonate},Total Balance: ${totalDonation}
+Time: ${dateT}`; 
 
 document.getElementById('contain').appendChild(p);
 
