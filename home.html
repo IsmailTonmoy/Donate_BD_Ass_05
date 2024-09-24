@@ -33,7 +33,7 @@
     </header>
     <main>
         <div class="text-center space-x-4 py-4">
-            <button id="show-card-container" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+            <button id="show-card-container" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg active:bg-[#B4F461] ">Donation</button>
             <button id="show-T-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
 
         </div>
@@ -114,9 +114,28 @@
 
         <!-- history -->
 
-        <div id="histry"  class="h-20 max-w-6xl mx-auto shadow-xl  py-10 hidden text-center">
+        <div id="histry"  class="hidden py-10 ">
+
+          <div id="contain" class=" max-w-6xl mx-auto text-center space-y-6">
+
+          </div>
             
         </div>
+
+
+        <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
 
 

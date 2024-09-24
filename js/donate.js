@@ -26,9 +26,12 @@ document.getElementById('donate')
     
 //add history
 const p = document.createElement('p');
-p.innerText = `${noaDonate} Taka is Donate For Flood at Noakhali.New Balance for Flood:${noaDonate}   Total Balance: ${totalDonation}`; 
+p.classList.add('shadow-xl','bg-green-300','h-10','font-bold','py-2');
+p.innerText = `${noaDonate} Taka is Donate For Flood at Noakhali. New Balance for Flood:${noaDonate}   Total Balance: ${totalDonation}`; 
+ 
+ 
 
-// should be a common functiondocument.getElementById('histry').appendChild(p);  
+document.getElementById('contain').appendChild(p);  
 })
 
 
@@ -57,10 +60,11 @@ document.getElementById('donatef')
     
 //add history
 const p = document.createElement('p');
+p.classList.add('shadow-xl','bg-green-300','h-10','font-bold','py-2');
 p.innerText = `${noaDonate} Taka is Donate For Flood Relief In Feni.New Balance for Flood Relief:${noaDonate}  Total Balance: ${totalDonation}`; 
 
-// should be a common function
-document.getElementById('histry').appendChild(p);
+
+document.getElementById('contain').appendChild(p);
 
 
 })
@@ -81,6 +85,7 @@ document.getElementById('donate-q')
 
     const noaDonate = addDonateM + nDonate;
 
+
     document.getElementById('n-donate-q').innerText = noaDonate;
 
     
@@ -94,10 +99,10 @@ document.getElementById('donate-q')
     
 //add history
 const p = document.createElement('p');
+p.classList.add('shadow-xl','bg-green-300','h-10','font-bold','py-2');
 p.innerText = `${noaDonate} Taka is Donate For Injured People in the Quota Movement.New Balance for Injured People:${noaDonate}   Total Balance: ${totalDonation}`; 
 
-// should be a common function
-document.getElementById('histry').appendChild(p);
+document.getElementById('contain').appendChild(p);
 
 
 })
