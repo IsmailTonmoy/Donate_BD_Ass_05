@@ -45,11 +45,14 @@ document.getElementById('donatef')
     if(isNaN(addDonateM)|| addDonateM <= 0){
         alert('Failed to add money');
         return;
-    }
+    } 
     
+    
+
     const nDonate = getTextValueById('n-donatef');
 
     const noaDonate = addDonateM + nDonate;
+
 
     document.getElementById('n-donatef').innerText = noaDonate;
 
