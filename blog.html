@@ -32,7 +32,79 @@
         </div>
         <section class="text-center pt-10 space-y-6">
 
-            <div class="collapse collapse-plus bg-base-200 w-full max-w-6xl h-32 mx-auto ">
+
+            <!-- Open the modal using ID.showModal() method -->
+<button class="btn w-full max-w-6xl h-24 mx-auto text-xl" onclick="my_modal_1.showModal()">1. What is the DOM (Document Object Model), 
+    and how does JavaScript interact with it?</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-2xl font-bold ">Answer</h3>
+    <div class="divider shadow-xl"></div>
+    <p class="py-4">The DOM is a tree structure representing an HTML document. 
+        JavaScript interacts with it to manipulate content, styles, and elements on the page by selecting and modifying DOM nodes.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn bg-red-500">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<button class="btn w-full max-w-6xl h-24 mx-auto text-xl" onclick="my_modal_2.showModal()">2. How can you manipulate DOM 
+    elements using JavaScript?</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <h3 class="text-2xl font-bold ">Answer</h3>
+    <div class="divider shadow-xl"></div>
+    <p class="py-4">DOM elements can be manipulated using methods like getElementById(), 
+        querySelector(), createElement(), appendChild(), and innerHTML to select, create, and modify elements.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn bg-red-500">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<button class="btn w-full max-w-6xl h-24 mx-auto text-xl" onclick="my_modal_3.showModal()">3. What are event listeners in the
+     context of DOM manipulation, 
+    and how do they work?</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <h3 class="text-2xl font-bold ">Answer</h3>
+    <div class="divider shadow-xl"></div>
+    <p class="py-4">Event listeners allow you to respond to user actions (e.g., clicks, key presses) using addEventListener() to
+         trigger functions when an event occurs on a DOM element.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn bg-red-500">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<button class="btn w-full max-w-6xl h-24 mx-auto text-xl" onclick="my_modal_4.showModal()">4. How does the DOM handle dynamic 
+    changes in a webpage,
+     and what is the role of reflow and repaint in DOM manipulation?</button>
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box">
+    <h3 class="text-2xl font-bold ">Answer</h3>
+    <div class="divider shadow-xl"></div>
+    <p class="py-4">When elements are modified, added, or removed, the browser reflows 
+        (recalculates layout) and repaints (updates the visual part), which can impact performance if not optimized.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn bg-red-500">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+            <!-- <div class="collapse collapse-plus bg-base-200 w-full max-w-6xl h-32 mx-auto ">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title text-xl font-medium">1. What is the DOM (Document Object Model), and how does JavaScript interact with it?</div>
                 <div class="collapse-content">
@@ -68,7 +140,7 @@
                 <div class="collapse-content">
                   <p>hello</p>
                 </div>
-              </div>
+              </div> -->
             
 
 
